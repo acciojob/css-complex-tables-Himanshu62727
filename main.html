@@ -1,16 +1,113 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Gallery Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid orange;
+        }
+        th, td {
+            border: 1px solid orange;
+            text-align: center;
+            padding: 3px 5px;
+        }
+        th {
+            background-color: #888888;
+            color: white;
+        }
+        .sub-total-text {
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Firm</th>
+                <th>Org</th>
+                <th>Lob</th>
+                <th>Sub Lob</th>
+                <th>Business Plans</th>
+                <th>Business Components</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="12">XYZ</td>
+                <td rowspan="6">CST</td>
+                <td rowspan="3">CT</td>
+                <td>ADS</td>
+                <td>1</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>BTO</td>
+                <td>2</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>CSI</td>
+                <td>3</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td rowspan="2">VCT</td>
+                <td>ADS</td>
+                <td>4</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>BTO</td>
+                <td>5</td>
+                <td>15</td>
+            </tr>
+            <tr class="sub-total-row">
+                <td class="sub-total-text" colspan="3">Sub Total</td>
+                <td>6</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td rowspan="5">CST</td>
+                <td rowspan="2">CT</td>
+                <td>ADS</td>
+                <td>7</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>BTO</td>
+                <td>8</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td rowspan="2">VCT</td>
+                <td>CSI</td>
+                <td>9</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>ADS</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr class="sub-total-row">
+                <td class="sub-total-text" colspan="3">Sub Total</td>
+                <td>11</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
-
 </html>
+
